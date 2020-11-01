@@ -1,0 +1,535 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 16px;
+  font-family: 'Mitr', sans-serif; }
+
+header {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: initial;
+  flex-wrap: nowrap; }
+  @media (min-width: 1600px) {
+    header {
+      height: 50vh; } }
+  header .banner {
+    width: 100%;
+    max-height: 100%;
+    background: url(../img/banner2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    margin: 35px 35px;
+    position: relative; }
+    header .banner .banner-texto {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 15px;
+      left: 20px; }
+      header .banner .banner-texto .icon-banner {
+        font-size: 18px;
+        margin: 10px;
+        color: white; }
+      header .banner .banner-texto #banner-texto {
+        font-size: 1.5em;
+        color: white; }
+  header .aviso-dia {
+    position: absolute;
+    top: 15%;
+    left: 0%;
+    width: 10%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+    border-radius: 5px 20px 20px 0; }
+    header .aviso-dia .tiempos-dia {
+      width: 100%;
+      height: 50%;
+      background-color: #322574;
+      border-radius: 1px 20px 20px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      flex-wrap: nowrap;
+      font-size: 1.125em; }
+      header .aviso-dia .tiempos-dia #img_dia {
+        width: 50%;
+        height: 60%; }
+        @media (min-width: 1920px) {
+          header .aviso-dia .tiempos-dia #img_dia {
+            height: 68%; } }
+        header .aviso-dia .tiempos-dia #img_dia img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover; }
+    header .aviso-dia #temp_hoy {
+      width: 100%;
+      height: 50%;
+      background-color: #7d68e9;
+      border-radius: 0 20px 20px 0px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2.5em; }
+
+.fondo {
+  width: 90%;
+  height: 150vh;
+  background-color: white;
+  margin: 15px auto;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center; }
+  @media (min-width: 1600px) {
+    .fondo {
+      align-items: flex-start;
+      height: auto;
+      margin: 0px 15px;
+      border-radius: auto; } }
+  .fondo .contenedor-otros-paises {
+    width: 100%;
+    height: 26%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+    @media (min-width: 1600px) {
+      .fondo .contenedor-otros-paises {
+        width: 40%;
+        height: 64%;
+        position: absolute;
+        top: 38%;
+        left: 60%;
+        margin-top: 0;
+        margin-bottom: 0;
+        flex-wrap: nowrap; } }
+    @media (min-width: 1920px) {
+      .fondo .contenedor-otros-paises {
+        top: 28%; } }
+    .fondo .contenedor-otros-paises .otros-paises {
+      width: 100%;
+      height: 55%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap; }
+      @media (min-width: 1600px) {
+        .fondo .contenedor-otros-paises .otros-paises {
+          width: 60%;
+          height: 55%;
+          flex-direction: column;
+          flex-wrap: nowrap; } }
+      .fondo .contenedor-otros-paises .otros-paises .clima-otros-paises {
+        width: 45%;
+        height: 100%;
+        border: 1px solid #7d68e9;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap; }
+        @media (min-width: 1600px) {
+          .fondo .contenedor-otros-paises .otros-paises .clima-otros-paises {
+            width: 95%;
+            height: 40%;
+            background-color: white;
+            box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47); } }
+        .fondo .contenedor-otros-paises .otros-paises .clima-otros-paises .contenido-otros-paises {
+          width: 80%;
+          height: 30%;
+          display: flex;
+          justify-content: space-evenly;
+          align-content: center;
+          flex-wrap: nowrap; }
+          @media (min-width: 1600px) {
+            .fondo .contenedor-otros-paises .otros-paises .clima-otros-paises .contenido-otros-paises {
+              width: 100%;
+              height: 60%;
+              justify-content: flex-start; } }
+          .fondo .contenedor-otros-paises .otros-paises .clima-otros-paises .contenido-otros-paises .nombre-otros-paises {
+            width: 30%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            .fondo .contenedor-otros-paises .otros-paises .clima-otros-paises .contenido-otros-paises .nombre-otros-paises p {
+              font-weight: 400;
+              font-size: 1.25em; }
+          .fondo .contenedor-otros-paises .otros-paises .clima-otros-paises .contenido-otros-paises .temp-otros-paises {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            .fondo .contenedor-otros-paises .otros-paises .clima-otros-paises .contenido-otros-paises .temp-otros-paises p {
+              font-weight: 400; }
+              @media (min-width: 1600px) {
+                .fondo .contenedor-otros-paises .otros-paises .clima-otros-paises .contenido-otros-paises .temp-otros-paises p {
+                  font-size: 1.5em; } }
+          .fondo .contenedor-otros-paises .otros-paises .clima-otros-paises .contenido-otros-paises .icon-otros-paises {
+            width: 20%;
+            height: 100%; }
+            @media (min-width: 1600px) {
+              .fondo .contenedor-otros-paises .otros-paises .clima-otros-paises .contenido-otros-paises .icon-otros-paises {
+                height: auto;
+                background-color: #838282;
+                border-radius: 10px;
+                margin-right: 30px; } }
+            .fondo .contenedor-otros-paises .otros-paises .clima-otros-paises .contenido-otros-paises .icon-otros-paises p {
+              width: 100%;
+              height: 100%;
+              text-align: center; }
+              .fondo .contenedor-otros-paises .otros-paises .clima-otros-paises .contenido-otros-paises .icon-otros-paises p .img_pantalla {
+                width: 70%;
+                height: 100%;
+                object-fit: cover; }
+        .fondo .contenedor-otros-paises .otros-paises .clima-otros-paises .caracteristicas-otros-paises {
+          width: 75%;
+          height: 60%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-content: center;
+          flex-wrap: wrap; }
+          @media (min-width: 1600px) {
+            .fondo .contenedor-otros-paises .otros-paises .clima-otros-paises .caracteristicas-otros-paises {
+              flex-direction: row;
+              justify-content: flex-start;
+              flex-wrap: nowrap;
+              height: auto;
+              width: 100%; } }
+          .fondo .contenedor-otros-paises .otros-paises .clima-otros-paises .caracteristicas-otros-paises .porcentaje-humedad-otros-paises {
+            width: 100%;
+            height: 25%;
+            text-align: center;
+            color: #ccc;
+            font-size: 1em;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center; }
+            @media (min-width: 1600px) {
+              .fondo .contenedor-otros-paises .otros-paises .clima-otros-paises .caracteristicas-otros-paises .porcentaje-humedad-otros-paises {
+                width: 35%; } }
+          .fondo .contenedor-otros-paises .otros-paises .clima-otros-paises .caracteristicas-otros-paises .humedad-otros-paises {
+            width: 100%;
+            height: 25%;
+            text-align: center;
+            color: #ccc;
+            font-size: 1em; }
+            @media (min-width: 1600px) {
+              .fondo .contenedor-otros-paises .otros-paises .clima-otros-paises .caracteristicas-otros-paises .humedad-otros-paises {
+                width: 35%; } }
+          .fondo .contenedor-otros-paises .otros-paises .clima-otros-paises .caracteristicas-otros-paises .km-otros-paises {
+            width: 100%;
+            height: 25%;
+            text-align: center;
+            color: #ccc;
+            font-size: 1em; }
+            @media (min-width: 1600px) {
+              .fondo .contenedor-otros-paises .otros-paises .clima-otros-paises .caracteristicas-otros-paises .km-otros-paises {
+                width: 25%; } }
+    .fondo .contenedor-otros-paises .agregar-ubicacion {
+      width: 80%;
+      height: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: nowrap; }
+      @media (min-width: 1600px) {
+        .fondo .contenedor-otros-paises .agregar-ubicacion {
+          width: 56%;
+          border: 1px solid #ccc;
+          border-radius: 15px; } }
+      .fondo .contenedor-otros-paises .agregar-ubicacion .agregar-ubicacion-nombre {
+        width: 40%;
+        height: 30%;
+        text-align: center;
+        border-radius: 10px;
+        color: white;
+        background-color: #7d68e9;
+        padding: 10px 10px; }
+        @media (min-width: 1600px) {
+          .fondo .contenedor-otros-paises .agregar-ubicacion .agregar-ubicacion-nombre {
+            height: 10%;
+            border-radius: 25px;
+            margin: 20px; } }
+      .fondo .contenedor-otros-paises .agregar-ubicacion .agregar-ubicacion-img {
+        width: 180px;
+        height: 180px;
+        background: url(../img/marketinggeolocalización-canariasdigital-660x330.gif);
+        background-position: center;
+        background-size: cover;
+        text-align: center; }
+        @media (min-width: 1600px) {
+          .fondo .contenedor-otros-paises .agregar-ubicacion .agregar-ubicacion-img {
+            width: 380px;
+            height: 167px; } }
+  .fondo .articulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 70%; }
+    @media (min-width: 1600px) {
+      .fondo .articulos {
+        flex-direction: row;
+        align-items: flex-start;
+        width: 72%;
+        height: 75%;
+        justify-content: center;
+        margin: 20px 20px; } }
+    .fondo .articulos .forecast {
+      width: 100%;
+      height: 35%;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: nowrap; }
+      @media (min-width: 1280px) {
+        .fondo .articulos .forecast {
+          width: 28%;
+          margin-bottom: 0;
+          align-items: flex-start; } }
+      .fondo .articulos .forecast .titulo {
+        font-size: 1.5em;
+        font-weight: 200;
+        width: 100%;
+        height: 15%;
+        text-align: center;
+        margin-bottom: 10px; }
+        .fondo .articulos .forecast .titulo span {
+          font-weight: 400; }
+        @media (min-width: 1600px) {
+          .fondo .articulos .forecast .titulo {
+            text-align: left;
+            margin-bottom: 45px;
+            font-size: 2em; } }
+      .fondo .articulos .forecast .dia-semana {
+        background-color: white;
+        width: 80%;
+        height: 25%;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        position: relative; }
+        @media (min-width: 1280px) {
+          .fondo .articulos .forecast .dia-semana {
+            height: 30%;
+            border: 1px solid #ccc; } }
+        .fondo .articulos .forecast .dia-semana .dia-semana-componentes {
+          width: 50%;
+          position: relative;
+          display: flex; }
+          @media (min-width: 1280px) {
+            .fondo .articulos .forecast .dia-semana .dia-semana-componentes {
+              width: 50%;
+              height: 75px; } }
+          .fondo .articulos .forecast .dia-semana .dia-semana-componentes .icon-dia-semana {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; }
+            .fondo .articulos .forecast .dia-semana .dia-semana-componentes .icon-dia-semana img {
+              max-width: 45%; }
+              @media (min-width: 1280px) {
+                .fondo .articulos .forecast .dia-semana .dia-semana-componentes .icon-dia-semana img {
+                  max-width: 80%; } }
+          .fondo .articulos .forecast .dia-semana .dia-semana-componentes .texto-dia-semana {
+            width: 50%;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; }
+            .fondo .articulos .forecast .dia-semana .dia-semana-componentes .texto-dia-semana #clima_proximo_1,
+            .fondo .articulos .forecast .dia-semana .dia-semana-componentes .texto-dia-semana #clima_proximo_2,
+            .fondo .articulos .forecast .dia-semana .dia-semana-componentes .texto-dia-semana #clima_proximo_3 {
+              color: #ccc; }
+        .fondo .articulos .forecast .dia-semana .grados-dia-semana {
+          width: 35%;
+          height: 65px;
+          border: 6px solid #7d68e9;
+          border-radius: 14px;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          background-color: #7d68e9;
+          position: absolute;
+          top: -3%;
+          left: 70%; }
+          @media (min-width: 1280px) {
+            .fondo .articulos .forecast .dia-semana .grados-dia-semana {
+              height: 92%;
+              top: -3%;
+              left: 62%; } }
+          .fondo .articulos .forecast .dia-semana .grados-dia-semana p {
+            font-size: 1em;
+            color: white; }
+            @media (min-width: 1280px) {
+              .fondo .articulos .forecast .dia-semana .grados-dia-semana p {
+                font-size: 0.9375em; } }
+    .fondo .articulos .place-visit {
+      width: 100%;
+      height: 35%;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: nowrap; }
+      @media (min-width: 1280px) {
+        .fondo .articulos .place-visit {
+          width: 35%; } }
+      .fondo .articulos .place-visit .titulo-place-visit {
+        font-size: 1.5em;
+        font-weight: 200;
+        width: 100%;
+        height: 10%;
+        text-align: center;
+        margin: 25px; }
+        .fondo .articulos .place-visit .titulo-place-visit span {
+          font-weight: 400; }
+        @media (min-width: 1600px) {
+          .fondo .articulos .place-visit .titulo-place-visit {
+            margin: 0;
+            height: 15%;
+            margin-bottom: 45px;
+            text-align: left;
+            font-size: 2em; } }
+      .fondo .articulos .place-visit .contenido-place-visit {
+        background: url(../img/ArtScience-Museum-1-for-1.webp) no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 80%;
+        position: relative; }
+        @media (min-width: 1280px) {
+          .fondo .articulos .place-visit .contenido-place-visit {
+            height: 250px;
+            border: 1px solid #ccc;
+            border-radius: 25px; } }
+        .fondo .articulos .place-visit .contenido-place-visit .contenido-place-visit-2 {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .fondo .articulos .place-visit .contenido-place-visit .contenido-place-visit-2 .icon-place {
+            margin: 10px;
+            font-size: 20px;
+            color: white; }
+            @media (min-width: 1280px) {
+              .fondo .articulos .place-visit .contenido-place-visit .contenido-place-visit-2 .icon-place {
+                font-size: 2.125em; } }
+          .fondo .articulos .place-visit .contenido-place-visit .contenido-place-visit-2 .titulo-place {
+            font-size: 20px;
+            color: white;
+            text-align: center; }
+            @media (min-width: 1280px) {
+              .fondo .articulos .place-visit .contenido-place-visit .contenido-place-visit-2 .titulo-place {
+                text-align: left;
+                font-size: 1.5em; } }
+    .fondo .articulos .arte {
+      width: 100%;
+      height: 27%;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: nowrap; }
+      @media (min-width: 1280px) {
+        .fondo .articulos .arte {
+          width: 35%;
+          height: 250px;
+          margin-top: 8%;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          margin-left: 10px; } }
+      @media (min-width: 1600px) {
+        .fondo .articulos .arte {
+          margin-top: 9%; } }
+      @media (min-width: 1910px) {
+        .fondo .articulos .arte {
+          margin-top: 8%; } }
+      .fondo .articulos .arte .art-mini {
+        width: 45%;
+        height: 100%;
+        border-radius: 30px;
+        background: url(../img/arab-street.webp) no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        flex-wrap: nowrap; }
+        @media (min-width: 1280px) {
+          .fondo .articulos .arte .art-mini {
+            width: 90%;
+            height: 70px; } }
+        .fondo .articulos .arte .art-mini .contenedor-mini {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .fondo .articulos .arte .art-mini .contenedor-mini .icon-mini {
+            margin: 10px;
+            font-size: 1.5em;
+            color: white; }
+          .fondo .articulos .arte .art-mini .contenedor-mini .titulo-mini {
+            font-size: 1.5em;
+            color: white;
+            text-align: center; }
+      .fondo .articulos .arte .art-max {
+        width: 45%;
+        height: 100%;
+        border-radius: 30px;
+        background: url(../img/parma-fountain-in-republic-square-1366x911.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        flex-wrap: nowrap; }
+        @media (min-width: 1280px) {
+          .fondo .articulos .arte .art-max {
+            width: 90%;
+            height: 160px; } }
+        .fondo .articulos .arte .art-max .contenedor-max {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .fondo .articulos .arte .art-max .contenedor-max .icon-max {
+            margin: 10px;
+            font-size: 20px;
+            color: white; }
+          .fondo .articulos .arte .art-max .contenedor-max .titulo-max {
+            font-size: 1.5em;
+            color: white;
+            text-align: center; }
+
+/*# sourceMappingURL=estilos.css.map */
